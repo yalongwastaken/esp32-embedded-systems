@@ -1,0 +1,9 @@
+**/administrative/**
+!**/administrative/hardware
+!**/administrative/hardware/**
+**/.gitignore
+**/.vscode
+**/.DS_Store
+**/build/
+**/sdkconfig
+**/sdkconfig.esp32dev
