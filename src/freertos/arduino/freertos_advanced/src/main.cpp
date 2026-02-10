@@ -108,7 +108,9 @@ void IRAM_ATTR button_isr() {
   vTaskNotifyGiveFromISR(high_prio_task_handle, &higher_prio_task_woken);
   
   // request context switch
-  portYIELD_FROM_ISR(higher_prio_task_woken);
+  if (higher_prio_task_woken == pdTRUE) {
+    portYIELD_FROM_ISR();
+  }
 }
 
 void high_prio_task(void *pvParameters) {
