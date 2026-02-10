@@ -1,7 +1,7 @@
 /**
- * @file freertos_basic.ino
+ * @file main.cpp
  * @author Anthony Yalong
- * @brief Dual LED blink using FreeRTOS tasks demonstrating independent task execution
+ * @brief Dual LED blink using FreeRTOS tasks demonstrating independent task execution using Arduino framework.
  */
 
 // imports
